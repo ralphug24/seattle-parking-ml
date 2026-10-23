@@ -1,0 +1,34 @@
+{
+  "experiment.py": {
+    "bytes": 14057,
+    "sha256": "2389d354c07370d734e879a6de549e2d85fbd0d8de2d0639e4f26224fa0a8050"
+  },
+  "requirements-lock.txt": {
+    "bytes": 962,
+    "sha256": "ee3f8491c0dd4d901363d6bdc62f566a40259d069ae1870243aa71d018567e95"
+  },
+  "data/processed/sample.csv.gz": {
+    "bytes": 1687573,
+    "sha256": "09f5988e204dc2501f67dcebf20300598b3b661bb9f75c6a8c299b2228a6b925"
+  },
+  "notebooks/Seattle_Parking_Reconstruction.ipynb": {
+    "bytes": 409129,
+    "sha256": "5c67325466632e5b129af90cfa57cfbad4d17914c6e3115774e007f3b11ccc4c"
+  },
+  "models/dummy.joblib": {
+    "bytes": 2410,
+    "sha256": "5eec9868428fbeee9257d052947703c45d5db56f288d176ece6690d3725e8984"
+  },
+  "models/hist_gradient_boosting.joblib": {
+    "bytes": 86954,
+    "sha256": "73ebc5bdd208836922d198fe54eabae340e178d7faf1925f1f0e6d5d5755eade"
+  },
+  "models/logistic.joblib": {
+    "bytes": 2935,
+    "sha256": "d372820b45c45aa619c9b4105c47938cb780237b2def6bba6d8812faa21e61a4"
+  },
+  "models/random_forest.joblib": {
+    "bytes": 1669615,
+    "sha256": "dc7ddb87abecb1013c6cea6ddd276e3d3745707b443a41ddb588fd77c0aa3a72"
+  }
+}

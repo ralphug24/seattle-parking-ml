@@ -1,0 +1,9 @@
+{
+  "dataset": "arundhativt/seattle-parking-dataset",
+  "version": 1,
+  "file": "Parking_Holiday_Weather_Seattle_2015/PaidParkingOccupancyWeatherData_2015_55.csv",
+  "download_url": "https://www.kaggle.com/api/v1/datasets/download/arundhativt/seattle-parking-dataset/Parking_Holiday_Weather_Seattle_2015%2FPaidParkingOccupancyWeatherData_2015_55.csv?datasetVersionNumber=1",
+  "bytes": 67700106,
+  "sha256": "4268a5eedc171e90d507ad1dea813ec701528e58292e26fef22fb8916b4e010d",
+  "scope": "One source shard; not the complete original dataset or original experiment sample."
+}

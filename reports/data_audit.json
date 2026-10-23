@@ -1,0 +1,44 @@
+{
+  "scanned_sources": [
+    {
+      "part": 0,
+      "rows_scanned": 5000000
+    },
+    {
+      "part": 27,
+      "rows_scanned": 5000000
+    },
+    {
+      "part": 55,
+      "rows_scanned": 366111
+    }
+  ],
+  "sampled_rows": 51463,
+  "clean_rows": 47990,
+  "duplicate_sampled_keys_removed": 0,
+  "date_min": "2015-01-07 08:00:00",
+  "date_max": "2015-07-25 19:57:00",
+  "blockfaces": 1463,
+  "near_full_prevalence": 0.07430714732235882,
+  "legacy_prevalence": 0.08489268597624505,
+  "label_disagreement": 0.12202542196290894,
+  "missing_fraction": {
+    "ParkingTimeLimitCategory": 0.00010418837257762034,
+    "ParkingSpaceCount": 0.0,
+    "PaidParkingRate": 0.47934986455511563,
+    "Latitude": 0.0007293186080433424,
+    "Longitude": 0.0007293186080433424,
+    "temp": 0.0,
+    "precip": 0.0,
+    "hour_sin": 0.0,
+    "hour_cos": 0.0,
+    "dow": 0.0,
+    "month": 0.0,
+    "is_weekend": 0.0,
+    "is_us_holiday": 0.0,
+    "PaidParkingArea": 0.0,
+    "PaidParkingSubArea": 0.21096061679516567,
+    "ParkingCategory": 0.0
+  },
+  "limitation": "Deterministic Bernoulli sample from three source shards, not a representative annual sample. Deduplication is within sampled rows."
+}

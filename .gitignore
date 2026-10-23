@@ -1,0 +1,9 @@
+.venv/
+data/raw/
+data/processed/*
+!data/processed/sample.csv.gz
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+tmp/
+.jupyter/

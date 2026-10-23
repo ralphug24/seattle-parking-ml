@@ -1,0 +1,9 @@
+# Preserve exact bytes for files covered by artifact_manifest.json.
+experiment.py -text
+requirements-lock.txt -text
+notebooks/*.ipynb -text
+*.joblib binary
+*.gz binary
+*.png binary
+*.docx binary
+*.pptx binary

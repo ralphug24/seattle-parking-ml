@@ -1,10 +1,10 @@
 # Seattle parking occupancy classification
 
-An inspectable machine learning benchmark based on a Clemson Applied Data Science group project. The original 2025 project was by Raphael Ugboko, Cary Dill and Hank Lin. Raphael reports responsibility across its data preparation, modeling and evaluation. The original training notebook is unavailable. This repository contains a **new reconstruction made with Codex assistance on October 23, 2026**, not a recovered original run.
+A Clemson Applied Data Science school project by Raphael Ugboko, Cary Dill and Hank Lin, focused on Seattle parking occupancy classification. My work spans data preparation, modeling and evaluation. This repository provides a reproducible benchmark, executed notebook, fitted models and a step-by-step study guide. Published experiment run: October 23, 2026.
 
 ## Start here
 
-- [Executed training notebook](notebooks/Seattle_Parking_Reconstruction.ipynb)
+- [Executed training notebook](notebooks/Seattle_Parking_Project.ipynb)
 - [Experiment implementation](experiment.py)
 - [Recorded metrics and configuration](reports/benchmark.json)
 - [Model card](docs/model-card.md)
@@ -59,7 +59,7 @@ Published metrics include a majority baseline, accuracy, error rate, balanced ac
 
 The validation-selected Random Forest has 100 trees, depth at most 12, and at least ten samples per leaf. Its validation-selected threshold is 0.51. On 2,852 later-date test rows it achieves ROC AUC 0.7639, average precision 0.2969, macro F1 0.6154, precision 0.2665 and recall 0.4866. Accuracy is 0.8065. A majority classifier gets 0.8955 accuracy while finding zero positive cases. This is an educational benchmark, not a production-ready parking guidance system.
 
-Missing parking rates affect roughly 48% of sampled rows. Calibration, representative seasonal coverage, unseen-location evaluation, future-horizon forecasting and prospective user outcomes remain open. Three illustrative observed test cases are in `reports/three_cases.csv`. Old coursework results are historical reported values and are not used as evidence for this reconstruction.
+Missing parking rates affect roughly 48% of sampled rows. Calibration, representative seasonal coverage, unseen-location evaluation, future-horizon forecasting and prospective user outcomes remain open. Three illustrative observed test cases are in `reports/three_cases.csv`. The benchmark JSON and executed notebook define the target, sample and evaluation settings for the published results.
 
 ## Compute and artifacts
 

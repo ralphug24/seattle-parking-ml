@@ -34,7 +34,7 @@
   ],
   "results": {
     "dummy": {
-      "fit_and_predict_seconds": 0.27787110000099347,
+      "fit_and_predict_seconds": 0.34145970000099624,
       "validation": {
         "accuracy": 0.9215221202433742,
         "error_rate": 0.07847787975662579,
@@ -83,7 +83,7 @@
       }
     },
     "logistic": {
-      "fit_and_predict_seconds": 0.603586200000791,
+      "fit_and_predict_seconds": 0.7319556000002194,
       "validation": {
         "accuracy": 0.5901825306795916,
         "error_rate": 0.4098174693204084,
@@ -132,7 +132,7 @@
       }
     },
     "random_forest": {
-      "fit_and_predict_seconds": 1.510589000001346,
+      "fit_and_predict_seconds": 3.5490819000006013,
       "validation": {
         "accuracy": 0.7882850366092606,
         "error_rate": 0.21171496339073936,
@@ -181,7 +181,7 @@
       }
     },
     "hist_gradient_boosting": {
-      "fit_and_predict_seconds": 5.185784400000557,
+      "fit_and_predict_seconds": 5.570083700000396,
       "validation": {
         "accuracy": 0.9205939981437558,
         "error_rate": 0.07940600185624425,
@@ -284,5 +284,5 @@
     "pandas": "2.3.3",
     "numpy": "2.5.4"
   },
-  "code_sha256": "2389d354c07370d734e879a6de549e2d85fbd0d8de2d0639e4f26224fa0a8050"
+  "code_sha256": "c32616cd9d8fb1fd93dc8da134ba0408f54aee83806a966df427784e6bc1b442"
 }

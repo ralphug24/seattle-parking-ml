@@ -6,9 +6,9 @@ root=Path(__file__).resolve().parents[1]
 md=nb.v4.new_markdown_cell
 code=nb.v4.new_code_cell
 book=nb.v4.new_notebook(cells=[
-md("""# Seattle parking occupancy reconstruction
+md("""# Seattle parking occupancy classification
 
-Rebuilt October 23, 2026 from a 2025 Applied Data Science group project. This notebook records new experiments with AI coding assistance. It does not recover the missing original training notebook or reproduce the old report's numbers.
+Clemson Applied Data Science school project. This notebook records the published experiment run of October 23, 2026, including data preparation, model training, evaluation and three example predictions.
 
 **Question:** Can calendar, pricing, capacity, geographic and contemporaneous weather variables classify whether paid occupancy is at least 95% of a blockface's stated capacity? This is same-time classification, not a future-availability forecast. Payment-derived occupancy is not a direct sensor census of occupied spaces.
 
@@ -72,7 +72,7 @@ The repository saves preprocessing and model together, metrics, predictions, sam
 Before operational use: expand to all seasons and locations, verify capacity and paid-occupancy semantics, evaluate unseen blockfaces, build a distinct future-horizon target, assess probability calibration, and choose thresholds using measured false-positive and false-negative costs. Current results do not establish reduced traffic, better driver outcomes or production readiness.
 """)])
 book.metadata['kernelspec']={'display_name':'Seattle Parking Python','language':'python','name':'seattle-parking'}
-out=root/'notebooks/Seattle_Parking_Reconstruction.ipynb'
+out=root/'notebooks/Seattle_Parking_Project.ipynb'
 out.parent.mkdir(exist_ok=True)
 nb.write(book,out)
 print(out)

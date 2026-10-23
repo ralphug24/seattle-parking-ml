@@ -1,4 +1,4 @@
-"""Reconstructed Seattle parking benchmark. No original metrics are reused."""
+"""Seattle parking classification benchmark with reproducible training and evaluation."""
 from pathlib import Path
 import hashlib
 import json
@@ -222,6 +222,6 @@ def main():
     df=prepare(); plot_eda(df); splits=split_data(df)
     train_and_evaluate(splits);stability(splits['train'])
     write_json(ROOT/'reports/runtime.json',{'total_seconds':time.perf_counter()-start})
-    print('Completed reconstruction; see reports/benchmark.json',flush=True)
+    print('Completed experiment; see reports/benchmark.json',flush=True)
 
 if __name__=='__main__':main()

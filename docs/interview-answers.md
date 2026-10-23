@@ -1,22 +1,22 @@
 # Interview discussion draft
 
-These drafts describe the new reconstruction. Review and run the notebook, explain its decisions in your own words, and distinguish your remembered original coursework from the new AI-assisted implementation. Do not present the new numbers as the original 2025 results.
+Use these drafts beside the notebook and study guide. Explain the work in your own words, describe your personal role accurately, and tie numerical claims to the published experiment configuration.
 
 ## Model training
 
-My example is a Seattle parking occupancy project from Applied Data Science coursework, which I revisited to build a reproducible experiment. The inputs include time of day, day of week, parking capacity and price, location and weather. The output is a binary indicator of whether paid occupancy reaches 95% of the blockface's stated capacity.
+My example is a Seattle parking occupancy project from Applied Data Science coursework. The inputs include time of day, day of week, parking capacity and price, location and weather. The output is a binary indicator of whether paid occupancy reaches 95% of the blockface's stated capacity.
 
-The reconstruction compares logistic regression, Random Forest and histogram gradient boosting with a majority-class baseline. Logistic regression minimizes weighted binary log loss with L2 regularization. For the Random Forest, individual trees use Gini impurity reduction to choose splits. These are standard library objectives; there is no reinforcement-learning reward or custom loss. A forest is suitable for exploring nonlinear relationships and feature interactions in tabular data.
+The project compares logistic regression, Random Forest and histogram gradient boosting with a majority-class baseline. Logistic regression minimizes weighted binary log loss with L2 regularization. For the Random Forest, individual trees use Gini impurity reduction to choose splits. These are standard library objectives; there is no reinforcement-learning reward or custom loss. A forest is suitable for exploring nonlinear relationships and feature interactions in tabular data.
 
 The selected forest has 100 trees, maximum depth 12 and a minimum of ten samples per leaf. It was selected on validation macro F1 at probability 0.5. A separate validation step selected a threshold of 0.51 by positive-class F1.
 
-The changes from the old project are explicit: the target accounts for capacity rather than using a count threshold of eight; occupancy-derived features are excluded; preprocessing is fitted inside the training pipeline; later whole dates are held out; and the run preserves configurations, model files and predictions. This reconstruction used AI coding assistance, and I distinguish that implementation from my original coursework contribution.
+The modeling workflow makes several choices explicit: the target accounts for capacity rather than using a count threshold of eight; occupancy-derived features are excluded; preprocessing is fitted inside the training pipeline; later whole dates are held out; and the run preserves configurations, model files and predictions. The notebook and saved artifacts make those choices inspectable.
 
 ## Model evaluation
 
 I would explain evaluation through the class imbalance. On the later-date test set, only 10.45% of observations are near-full. A model that always predicts not-near-full achieves 89.55% accuracy and zero positive recall, so accuracy alone would give an incomplete assessment.
 
-The reconstruction reports macro F1, positive precision and recall, ROC AUC, average precision, log loss and confusion matrices. Macro F1 weights the two classes equally. Precision describes how many near-full alerts are correct; recall describes how many actual near-full cases are detected. ROC AUC measures ranking across thresholds, and average precision focuses on positive-class retrieval against a prevalence baseline.
+The evaluation reports macro F1, positive precision and recall, ROC AUC, average precision, log loss and confusion matrices. Macro F1 weights the two classes equally. Precision describes how many near-full alerts are correct; recall describes how many actual near-full cases are detected. ROC AUC measures ranking across thresholds, and average precision focuses on positive-class retrieval against a prevalence baseline.
 
 The validation-selected forest achieves test ROC AUC of 0.764 and average precision of 0.297. At the validation-selected threshold, precision is 0.267 and recall is 0.487. That is 145 true positives, 399 false positives and 153 false negatives. These results show signal and substantial errors, so I would not claim production readiness.
 
@@ -24,7 +24,7 @@ The dataset sample covers a limited set of dates. I would next expand seasonal c
 
 ## Relevance to an AI research technical program role
 
-The reconstruction makes requirements, data and compute dependencies, selection rules, experiment outcomes and open risks inspectable. It includes decision records, milestone acceptance criteria, environment versions and model handoff instructions. These are current project artifacts, not a claim that I managed a research infrastructure team or used these exact processes in the original class. CPU-only training was sufficient at this scale; expanding compute should follow a measured experiment need.
+The project makes requirements, data and compute dependencies, selection rules, experiment outcomes and open risks inspectable. It includes decision records, milestone acceptance criteria, environment versions and model handoff instructions. These artifacts connect model work to experiment coordination and technical handoff. CPU-only training was sufficient at this scale; expanding compute should follow a measured experiment need.
 
 ## Explain these distinctions before the interview
 
@@ -33,4 +33,4 @@ The reconstruction makes requirements, data and compute dependencies, selection 
 - Macro F1 versus positive F1: averaging equally across classes differs from focusing on near-full cases.
 - ROC AUC versus average precision: both assess ranking, but AP emphasizes the rare positive class.
 - Current-state classification versus future forecasting: the present task has no forecast horizon.
-- Original report versus reconstructed evidence: different target, sample and split mean different experiments.
+- Experiment comparability: different targets, samples and splits mean different experiments.

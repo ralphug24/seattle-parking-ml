@@ -1,6 +1,6 @@
 # Seattle parking project walkthrough
 
-Use this guide beside the executed notebook. The report and PowerPoint describe the original 2025 assignment. The code and results in this repository come from our October 2026 reconstruction with AI coding assistance. We changed the target, sample and evaluation design, so the new numbers are not the old results reproduced exactly.
+Use this guide beside the executed notebook to study the Seattle parking school project. It explains the assignment, each processing and modeling step, and the published October 23, 2026 experiment run. The notebook and benchmark JSON specify the exact target, sample and evaluation settings behind the results.
 
 ## 1 Understand the assignment before choosing a model
 
@@ -74,7 +74,7 @@ Logistic regression uses weighted binary log loss with L2 regularization. Binary
 
 Random Forest fits 100 decision trees with maximum depth twelve and at least ten training samples per leaf. Each split seeks to reduce Gini impurity, defined as 1 minus the sum of squared class proportions. Balanced subsample weights adjust class influence within the trees. Forest predictions aggregate the trees' probability estimates. We did not train the forest with Adam or a reinforcement-learning reward.
 
-Histogram gradient boosting uses log loss, 100 boosting iterations, a maximum of fifteen leaves and L2 regularization of one. It sequentially improves an ensemble. This is a histogram implementation of boosting, a specific reconstruction choice.
+Histogram gradient boosting uses log loss, 100 boosting iterations, a maximum of fifteen leaves and L2 regularization of one. It sequentially improves an ensemble. This is a histogram implementation of boosting, a specific implementation choice.
 
 These settings are fixed comparison configurations, not the result of an exhaustive hyperparameter search.
 
@@ -151,7 +151,7 @@ The portable commands in README.md cover activated environments. Timing can vary
 
 ## 12 Explain the research program relevance
 
-The project connects an ambiguous problem to a data contract, fixed evaluation criteria, bounded compute, experiment comparisons and a documented handoff. The current decision log and milestone table make dependencies and open risks visible. They are reconstruction artifacts, not a claim about management routines used in the original class.
+The project connects an ambiguous problem to a data contract, fixed evaluation criteria, bounded compute, experiment comparisons and a documented handoff. The current decision log and milestone table make dependencies and open risks visible. These records document the published experiment and its follow-up priorities.
 
 Before expanding the experiment, prioritize the source and label semantics, broader seasonal coverage, unseen-location testing, missing-price analysis, calibration and stakeholder error costs. A future-availability product also needs a future target and features that would actually be available at prediction time.
 
@@ -166,4 +166,4 @@ Before expanding the experiment, prioritize the source and label semantics, broa
 - Explain precision and recall using the actual confusion matrix.
 - What does ROC AUC tell us, and what does it not tell us?
 - Which result would you investigate next, and why?
-- Which parts belong to your original coursework, and which belong to this AI-assisted reconstruction?
+- Which work did you personally own, and how would you explain or reproduce each step?

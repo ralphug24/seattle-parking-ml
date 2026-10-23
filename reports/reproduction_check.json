@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "source_snapshot_commit": "dd78159",
+  "method": "Retrain all model families from a clean Git archive using the included sample and locked environment; compare all validation and test metrics.",
+  "selected_model_matches": true,
+  "maximum_absolute_metric_difference": 0.0,
+  "metric_tolerance": 1e-07,
+  "note": "Presentation and notebook naming updates do not change the training logic."
+}

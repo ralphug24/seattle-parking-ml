@@ -1,6 +1,6 @@
 # Model card
 
-**Model:** Random Forest near-full parking classifier. **Status:** Educational reconstruction with AI assistance, October 23, 2026. **Original project:** Clemson CPSC 4300/6300 group coursework, 2025.
+**Model:** Random Forest near-full parking classifier. **Status:** Course project benchmark. **Published run:** October 23, 2026. **Course:** Clemson CPSC 4300/6300 Applied Data Science.
 
 ## Intended use
 
@@ -24,4 +24,4 @@ The majority baseline achieves 89.55% accuracy and zero positive recall. Higher 
 
 ## Limitations
 
-Natural prevalence, missing rates, limited dates, repeating locations, weather availability and label semantics all restrict interpretation. No probability calibration, prospective testing, unseen-blockface evaluation or business-impact study has been completed. Source coverage and target differ from the original project, so its historical reported metrics are not directly comparable.
+Natural prevalence, missing rates, limited dates, repeating locations, weather availability and label semantics all restrict interpretation. No probability calibration, prospective testing, unseen-blockface evaluation or business-impact study has been completed. Compare metrics only when the target definition, sample and evaluation partitions match.

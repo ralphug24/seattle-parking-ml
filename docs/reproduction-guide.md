@@ -154,16 +154,3 @@ The portable commands in README.md cover activated environments. Timing can vary
 The project connects an ambiguous problem to a data contract, fixed evaluation criteria, bounded compute, experiment comparisons and a documented handoff. The current decision log and milestone table make dependencies and open risks visible. These records document the published experiment and its follow-up priorities.
 
 Before expanding the experiment, prioritize the source and label semantics, broader seasonal coverage, unseen-location testing, missing-price analysis, calibration and stakeholder error costs. A future-availability product also needs a future target and features that would actually be available at prediction time.
-
-## Interview rehearsal
-
-- What is one row, and what do the input and output represent?
-- Why did we change the old count-based target?
-- How could occupancy itself leak the answer?
-- What does each model optimize during training?
-- Which choices used validation data, and what role did test data play?
-- Why can the dummy model beat the forest on accuracy?
-- Explain precision and recall using the actual confusion matrix.
-- What does ROC AUC tell us, and what does it not tell us?
-- Which result would you investigate next, and why?
-- Which work did you personally own, and how would you explain or reproduce each step?

@@ -10,7 +10,6 @@ A Clemson Applied Data Science school project by Raphael Ugboko, Cary Dill and H
 - [Model card](docs/model-card.md)
 - [Step-by-step study and reproduction guide](docs/reproduction-guide.md)
 - [Experiment decisions and program handoff](docs/experiment-plan.md)
-- [Interview talking points](docs/interview-answers.md)
 - [Original group report](original-coursework/CPSC4300_6300%20Checkpoint.docx) and [slides](original-coursework/CPSC%204300%20Final%20Project.pptx)
 
 ## Question and scope

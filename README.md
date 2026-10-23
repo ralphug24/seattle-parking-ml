@@ -2,6 +2,8 @@
 
 A Clemson Applied Data Science school project by Raphael Ugboko, Cary Dill and Hank Lin, focused on Seattle parking occupancy classification. My work spans data preparation, modeling and evaluation. This repository provides a reproducible benchmark, executed notebook, fitted models and a step-by-step study guide. Published experiment run: October 23, 2026.
 
+The documented benchmark includes subsequent experiment reruns and refinements to the Fall 2025 coursework. Its metrics correspond to the notebook configuration recorded here.
+
 ## Start here
 
 - [Executed training notebook](notebooks/Seattle_Parking_Project.ipynb)
